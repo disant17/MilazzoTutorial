@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http'; //Importa Il modulo http
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 
@@ -11,7 +11,7 @@ import { ArticleComponent } from './article/article.component';
     ArticleComponent
   ],
   imports: [
-    BrowserModule,  NgbModule
+    BrowserModule,  NgbModule , HttpClientModule //Aggiungi il modulo http qui
   ],
   providers: [],
   bootstrap: [AppComponent]
