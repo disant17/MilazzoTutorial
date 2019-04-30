@@ -1,11 +1,50 @@
 {
-  "posts": [
+  "prenotazioni": [
     {
-      "id": 1,
-      "title": "hello"
+      "Nome": "Luca",
+      "Cognome": "Milazzo",
+      "Indirizzo":"Via Prealpi 6",
+      "Telefono":"3381104356",
+      "Email":"luil2000@gmail.com",
+      "Data": "10/05/2019",
+      "Ora": "12:30"
+    },
+     {
+      "Nome": "Simone",
+      "Cognome": "Tufariello",
+      "Indirizzo":"Via Gennari 1",
+      "Telefono":"3381106576",
+      "Email":"simone@gmail.com",
+      "Data": "10/05/2019",
+      "Ora": "10:30"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+     {
+      "Nome": "Jacopo",
+      "Cognome": "Moretti",
+      "Indirizzo":"Via Gramsci 1",
+      "Telefono":"3384528790",
+      "Email":"moretti@gmail.com",
+      "Data": "11/05/2019",
+      "Ora": "13:30"
+    }
+     {
+      "Nome": "Anna",
+      "Cognome": "Danza",
+      "Indirizzo":"Via Prealpi 6",
+      "Telefono":"3384528790",
+      "Email":"anna@gmail.com",
+      "Data": "7/05/2019",
+      "Ora": "10:00"
+    }
+     {
+      "Nome": "Fabio",
+      "Cognome": "Marchisio",
+      "Indirizzo":"Via Zhen 6",
+      "Telefono":"2345674565",
+      "Email":"fabio@gmail.com",
+      "Data": "10/05/2019",
+      "Ora": "14:30"
+    }
+  ]
+
 }
