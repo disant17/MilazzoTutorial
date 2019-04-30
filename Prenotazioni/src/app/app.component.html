@@ -36,4 +36,9 @@
   </form>
 </div>
 
-<app-prenotazione></app-prenotazione>
+<div class="container-fluid" style="background-color:grey;"  >
+  <h1>Lista Prenotazioni</h1>
+    <ul>
+        <app-prenotazione *ngFor="let prn of prenotazioni" [prenotazione]="prn"></app-prenotazione>
+    </ul>
+</div>

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; //Aggiungiamo qui
-
+import { HttpClientModule } from '@angular/common/http'; //Importa Il modulo http
 import { AppComponent } from './app.component';
 import { PrenotazioneComponent } from './prenotazione/prenotazione.component';
 
@@ -11,7 +11,7 @@ import { PrenotazioneComponent } from './prenotazione/prenotazione.component';
     PrenotazioneComponent
   ],
   imports: [
-    BrowserModule ,NgbModule
+    BrowserModule ,NgbModule , HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
