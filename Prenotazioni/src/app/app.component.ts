@@ -37,8 +37,34 @@ export class AppComponent {
 
 
 prenota(nome: HTMLInputElement, cognome: HTMLInputElement , indirizzo:HTMLInputElement  , telefono: HTMLInputElement, email: HTMLInputElement, data: HTMLInputElement , ora: HTMLInputElement): boolean {
-   // console.log(`prenotazione in attesa di conferma : ${nome.value} and body: ${cognome.value} and and id : ${id.value} userId: ${userId.value}`);
+
+  var found = false;
+for(var i = 0; i < this.prenotazioni.length; i++) {
+    if ((this.prenotazioni[i].Data == data.value) && (this.prenotazioni[i].Ora == ora.value)) {
+        found = true;
+        break;
+    }
+   
+}
+
+if (found != true){
+
+
     this.prenotazioni.push(new Prenotazione(nome.value, cognome.value, indirizzo.value , telefono.value , email.value , data.value , ora.value));
+
+
+}else{
+
+
+alert("Posto non disponibile");
+
+
+}
+
+
+
+
+   
     nome.value = '';
     cognome.value = '';
     indirizzo.value = '';
