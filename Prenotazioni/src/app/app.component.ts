@@ -14,6 +14,16 @@ export class AppComponent {
    o :Observable<Object>;
   prenotazioni:Prenotazione[];   // <-- component property
 
+  prenotazioneDettagliare:Prenotazione;
+  
+
+  dettagliare(prenotazioneCliccata:Prenotazione){
+
+  this.prenotazioneDettagliare = prenotazioneCliccata;
+
+  }
+   
+
   constructor(public http: HttpClient){
       this.makeRequest();
     /*this.articles = [

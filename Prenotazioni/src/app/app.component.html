@@ -39,12 +39,12 @@
 <div class="container-fluid" style="background-color:grey;"  >
   <h1>Lista Prenotazioni</h1>
     <ul>
-        <app-prenotazione *ngFor="let prn of prenotazioni" [prenotazione]="prn"></app-prenotazione>
+        <app-prenotazione *ngFor="let prn of prenotazioni" [prenotazione]="prn" (click)="dettagliare(prn)"></app-prenotazione>
     </ul>
 </div>
 
 <div class="container-fluid" style="background-color:white;"  >
   <h1>Dettaglio Prenotazione</h1>
-   <app-dettaglio></app-dettaglio>
+   <app-dettaglio [prenotazione] = "prenotazioneDettagliare" ></app-dettaglio>
 </div>
 

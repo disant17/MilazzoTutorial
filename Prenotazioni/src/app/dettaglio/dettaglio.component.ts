@@ -7,7 +7,8 @@ import { Prenotazione } from '../prenotazione/prenotazione.model';
   styleUrls: ['./dettaglio.component.css']
 })
 export class DettaglioComponent implements OnInit {
- @Input() prenotazione: Prenotazione;
+
+ @Input()  prenotazione: Prenotazione;
 
   constructor() {
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Prenotazione } from './prenotazione.model'; // <-- import this
-import { DettaglioComponent } from '../dettaglio/dettaglio.component';
+
 
 @Component({
   selector: 'app-prenotazione',
@@ -9,17 +9,13 @@ import { DettaglioComponent } from '../dettaglio/dettaglio.component';
 })
 export class PrenotazioneComponent implements OnInit {
   @Input() prenotazione:Prenotazione;
+ 
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  dettagliare(){
 
-alert(this.prenotazione.Email);
-
-
-  }
 
 }
