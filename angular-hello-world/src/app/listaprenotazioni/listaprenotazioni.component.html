@@ -1,0 +1,7 @@
+<p *ngFor = "let prenotazione of pren"     (click)="onSelect(prenotazione)">
+
+      {{prenotazione.Nome}}
+      {{prenotazione.Cognome}}
+
+</p>
+<app-prenotazione *ngIf="selectedp" [ciao]="selectedp"> </app-prenotazione>
